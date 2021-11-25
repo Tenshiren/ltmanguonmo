@@ -312,6 +312,7 @@ top: -8px;
 .service-desc {
   margin-left: 70px;
   position: relative;
+  padding-top: 5px;
   top: 5px;
 }
 

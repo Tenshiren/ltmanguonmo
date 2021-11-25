@@ -45,8 +45,15 @@
 			const id = window.location.search.replace('?', '');
 			// local
 			//const id = window.location.search.replace('?id=', '');
-			const link = `https://canvas.dntu.edu.vn/courses/${id}/${txt}`
-			window.open(link, "_blank");
+			if (txt == 'decuong') {
+				const link = `https://canvas.dntu.edu.vn/courses/${id}/pages/de-cuong`
+				window.open(link, "_blank");
+			}
+			else {
+				const link = `https://canvas.dntu.edu.vn/courses/${id}/${txt}`
+				window.open(link, "_blank");
+			}
+
 		}
 	</script>
 
@@ -147,7 +154,7 @@
 				</div>
 
 				<!-- service item -->
-				<a href="#" onclick="openLink('pages');">
+				<a href="#" onclick="openLink('decuong');">
 					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
 						<div class="service-item">
 							<div class="service-icon">
@@ -172,7 +179,7 @@
 							</div>
 
 							<div class="service-desc">
-								<h3>Giáo trình</h3>
+								<h3>Bài giảng</h3>
 
 							</div>
 						</div>
@@ -190,6 +197,64 @@
 
 							<div class="service-desc">
 								<h3>Bài tập</h3>
+
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- end service item -->
+
+				<br><br>
+
+
+			</div>
+
+			<div class="row" style="margin-top:25px">
+				<!-- service item -->
+				<a href="#" onclick="openLink('modules');">
+					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-list fa-2x"></i>
+							</div>
+
+							<div class="service-desc">
+								<h3>Modules</h3>
+								<!-- <p></p> -->
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- end service item -->
+
+				<!-- service item -->
+				<a href="https://teams.microsoft.com/l/team/19%3ayABtqr-siQ-lhakdH7dgoTSyGNta-FgKLXUisqk5j3Q1%40thread.tacv2/conversations?groupId=0d5ed4d6-8eb1-4c19-b2fa-d001e8dd722b&tenantId=6e0182cd-b36b-4286-b337-e3811b35f106"
+					target="blank">
+					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-windows fa-2x"></i>
+							</div>
+
+							<div class="service-desc">
+								<h3>Microsoft Teams</h3>
+
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- end service item -->
+
+				<!-- service item -->
+				<a href="https://www.facebook.com/groups/1108570546346249" target="blank">
+					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-facebook-square fa-2x"></i>
+							</div>
+
+							<div class="service-desc">
+								<h3>Facebook lớp</h3>
 
 							</div>
 						</div>
