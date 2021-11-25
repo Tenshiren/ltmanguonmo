@@ -439,8 +439,14 @@ top: -8px;
 ==========================================*/
 
 .member-thumb {
-  width: 273px;
-  position: relative;
+  width: auto;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
 }
 
 .member-thumb .overlay h5 {
